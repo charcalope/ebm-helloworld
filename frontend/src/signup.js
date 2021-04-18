@@ -1,8 +1,11 @@
 import './styles/SignUp.css';
 import bg from './assets/SignUpBG.png';
 import React, {useState} from 'react'
+import NavBar from './components/NavBar';
 
-import { FormControl, VStack, Text, FormLabel, Button, Input, Image, Flex } from '@chakra-ui/react'
+import {Link} from 'react-router-dom';
+
+import { FormControl, VStack, Text, FormLabel, Button, Input, Image, Flex } from '@chakra-ui/react';
 
 
 
@@ -16,9 +19,7 @@ function SignUp(props) {
 
   return (
     <VStack className="SignUp">
-      
       <Flex w="100vw" h="100vh">
-        {/* <Flex bgImage={bg} w="max(60vw,700px)" bgSize="cover"></Flex> */}
         <Image className="signup-bg" src={bg}></Image>
         <Flex className="content-container">
           <Flex className="text-container">
@@ -45,7 +46,9 @@ function SignUp(props) {
                 {isSignUp ? "Already a member?" : "Don't have an account?"}&nbsp;
                 <Text as="button" color="#3B9F88" fontWeight="700" onClick={()=>swapSignUpOption(!isSignUp)}> {isSignUp ? "Log In" : "Sign Up"}</Text></Flex>
 
+              <Link to="/dashboard">
               <Button fontFamily="Poppins" borderRadius="100px" mt="20px" w="300px" colorScheme="teal" textAlign="center" bgColor="3B9F88">SUBMIT</Button>
+              </Link>
             {/* </FormControl> */}
           </Flex>
         </Flex>

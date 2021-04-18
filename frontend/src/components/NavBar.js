@@ -5,9 +5,13 @@ import logo from '../assets/TempLogo.png'
 export default function NavBar(props) {
     return (
         <div className="navbar-container">
-            <div className="logo-container">
-                <div className="logo"></div>
-            </div>
+            <Link to="/">
+                <div className="logo-container">
+                    <div className="logo"></div>
+                    <div className="logo-name">PROJECT LORE</div>
+                </div>
+            </Link>
+
             <span className="navbar-button-container">
                 <Link to="/signup">
                     <button className="filled-button"> SIGN UP</button>
