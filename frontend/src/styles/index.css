@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar-container {
+  position:absolute;
+  font-family:'Poppins';
+  padding:25px;
+  width:100vw;
+  z-index:6;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-button-container {
+  justify-self: flex-end;
+}
+
+.filled-button {
+  /* height:50px;
+  width: 100px; */
+  font-weight:600;
+  color: #3B9F88;
+  font-family:'Poppins';
+  font-size:14px;
+  margin:10px;
+  padding-left:25px;
+  padding-right:25px;
+
+  padding-top:10px;
+  padding-bottom:10px;
+  border-radius:50px;
+  background-color: white;
+
+  transition: opacity 0.5s;
+}
+
+.filled-button:hover {
+  opacity: 0.75;
+}
+.filled-button:active {
+  opacity: 0.5;
+}
+
+.empty-button {
+  /* height:50px;
+  width: 100px; */
+  font-weight:600;
+  border:2px solid white;
+  color: white;
+  font-family:'Poppins';
+  font-size:14px;
+  margin:10px;
+  padding-left:25px;
+  padding-right:25px;
+
+  padding-top:10px;
+  padding-bottom:10px;
+  border-radius:50px;
+  background-color: transparent;
+  transition: background-color 0.5s, color 0.5s, opacity 0.5s;
+}
+
+.empty-button:hover {
+  background-color:white;
+  color:#3B9F88;
+}
+.empty-button:active {
+  opacity:0.75;
+}
+
+.logo-container {
+  width:200px;
+  height:50px;
+}
+
+.logo {
+  background-image:url(../assets/TempLogo2.png);
+  background-repeat:no-repeat;
+  background-size:50px 50px;
+  width:50px;
+  height:50px;
+}
